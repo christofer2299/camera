@@ -51,5 +51,5 @@ move_uploaded_file($other_tmp,$o_path);
 $ins="INSERT INTO `customer`(`cid`,`name`,`email`,`address`,`phone`,`adhar_image`,`other_image`)VALUES('$id','$name','$email','$address','$phone','$path','$o_path')";
 $conn->query($ins);
 
-header("Location:show.php")
+header("Location:show.php");
 ?>
